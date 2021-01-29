@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//assets.locaweb.com.br/locastyle/2.0.6/stylesheets/locastyle.css"
+    />
+    <title>Verificações</title>
+  </head>
+  <body style="padding: 50px">
+    <div id="principal">
+      <main>
+        <form action="#" method="post">
+          <fieldset>
+            <fieldset class="grupo">
+              <div class="campo">
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  style="width: 10em"
+                  value=""
+                />
+              </div>
+              <div style="margin: 10px">
+                <label for="snome">Sobrenome</label>
+                <input
+                  type="text"
+                  id="snome"
+                  name="snome"
+                  style="width: 10em"
+                  value=""
+                />
+              </div>
+              <div style="display: table">
+                <label for="data">Data de Nascimento</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="data"
+                  name="data"
+                  placeholder="Ex.: dd/mm/aaaa"
+                  data-mask="00/00/0000"
+                  maxlength="100px"
+                  autocomplete="off"
+                />
+              </div>
+              <div>
+                <label for="cpf">CPF</label>
+                <input
+                  type="text"
+                  placeholder="Ex.: 000.000.000-00"
+                  class="form-control cpf-mask"
+                  id="cpf"
+                  name="cpf"
+                  style="width: 10em"
+                  value=""
+                /> 
+              </div>
+            </fieldset>
+            <div class="campo">
+              <label>Sexo</label>
+              <label>
+                <input type="radio" name="sexo" value="masculino" /> Masculino
+              </label>
+              <label>
+                <input type="radio" name="sexo" value="feminino" /> Feminino
+              </label>
+            </div>
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                style="width: 20em"
+                value=""
+              />
+            </div>
+            <div>
+              <label for="telefone">Telefone Fixo</label>
+              <input
+                type="text"
+                class="form-control phone-ddd-mask"
+                placeholder="Ex.: (00) 0000-0000"
+                id="telefone"
+                name="telefone"
+                style="width: 10em"
+                value=""
+              />
+            </div>
+
+            <fieldset>
+              <div style="margin: 10px">
+                <label for="cidade">Cidade</label>
+                <input
+                  type="text"
+                  id="cidade"
+                  name="cidade"
+                  style="width: 10em"
+                  value=""
+                />
+              </div>
+              <div style="margin: 10px">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                  <option value="">--</option>
+                  <option value="PR">PR</option>
+                  <option value="SP">SP</option>
+                  <option value="RJ">RJ</option>
+                  <option value="BH">BH</option>
+                  <option value="RO">RO</option>
+                </select>
+              </div>
+            </fieldset>
+
+            <button
+              type="submit"
+              class="btn btn-warning"
+              id="botao"
+              name="submit"
+              style="margin: 10px"
+            >
+              Enviar
+            </button>
+          </fieldset>
+        </form>
+      </main>
+    </div>
+  </body>
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-2.0.3.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//assets.locaweb.com.br/locastyle/2.0.6/javascripts/locastyle.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"
+  ></script>
+</html>
